@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;800&family=Nanum+Myeongjo:wght@400;800&family=Ubuntu:wght@300&family=Unbounded:wght@400;800&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    line-height: 1.4;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.card {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    border-radius: 6px;
+    box-shadow: 2rem 0 2rem -1rem rgb(0 50 100 / 30%);
+}
+
+.cardImg{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.cardDescription {
+    padding: 0 20px;
+}
+
+.btn {
+    padding: 14px 50px;
+    cursor: pointer;
+    background-color: rgb(155, 47, 86);
+    color: white;
+    font-weight: bold;
+    border: 1px solid lightslategrey;
+    border-radius: 6px;
+}
+
+
+.quote-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .quote {
+    padding: 8px;
+    width: 200px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    background-color: white;
+  }
