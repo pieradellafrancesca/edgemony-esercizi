@@ -29,11 +29,11 @@ const dataManipulating = (data) => {
 
         const titleEl = document.createElement('h2');
         titleEl.className = 'title';
-        titleEl.textContent = item.title.slice(0, 10); // utilizzo del metodo slice() per il primo punto dell'esercizio 1
+        titleEl.textContent = item.title.slice(0, 10);
 
         const descriptionEl = document.createElement('p');
         descriptionEl.className = 'description';
-        descriptionEl.textContent = item.description.slice(0, 30); // utilizzo del metodo slice() per il primo punto dell'esercizio 1
+        descriptionEl.textContent = item.description.slice(0, 30); 
 
         const priceEl = document.createElement('h4');
         priceEl.className = 'price';
@@ -43,11 +43,9 @@ const dataManipulating = (data) => {
         addBtn.className = 'basket-btn';
         addBtn.textContent = 'Add to basket';
 
-        // SECONDO PUNTO DELL'ESERCIZIO 1: aggiungere alert()
         addBtn.addEventListener('click', () => {
             cart.push(item);
             cartCreator();
-            window.alert('Item added successfully!');
             console.log(cart);
         })
 
@@ -57,8 +55,6 @@ const dataManipulating = (data) => {
 };
 
 
-//Avanzato
-
 const navbarEl = document.querySelector('.navbar');
 const dropDownEl = document.querySelector('.drop-down');
 
@@ -66,7 +62,7 @@ navbarEl.addEventListener('click', () => dropDownEl.classList.toggle('show'));
 
 const cartCreator = () => {
     dropDownEl.innerHTML = "";
-    cart.forEach((item) => {
+    cart.forEach((item, index) => {
 
         const container = document.createElement('div');
         container.className = 'cart-container';
@@ -83,15 +79,15 @@ const cartCreator = () => {
         cartPrice.textContent = '$ ' + item.price;
 
         const deleteBtn = document.createElement('button');
-        deleteBtn.textContent = 'x';
+        deleteBtn.textContent = 'X';
         deleteBtn.className = 'delete';
 
         deleteBtn.addEventListener('click', () => {
             container.remove();
-            cart.pop();
+            cart.splice(index, 1);
         });
         
         container.append(cartImg, cartEl, cartPrice, deleteBtn);
         dropDownEl.appendChild(container);
     })
-}
+};
