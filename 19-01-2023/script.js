@@ -18,7 +18,11 @@ btnEl.addEventListener('click', () => {
 const dataManipulating = (data) => {
     loaderEl.textContent = '';
 
-    data.forEach((item) => {
+    // data.forEach((item) => { //
+        
+    //AVANZATO - filtro per categoria
+    const newData = data.filter((element) => element.category.id === 11); //
+    newData.forEach((item) => {
         const cardEl = document.createElement('div');
         cardEl.className = 'card';
 
@@ -91,3 +95,4 @@ const cartCreator = () => {
         dropDownEl.appendChild(container);
     })
 };
+
