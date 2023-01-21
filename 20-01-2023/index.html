@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" type="module"></script>
+    <!-- <script src="./filters.js" type="module"></script> -->
+    
 </head>
 <body>
     <header>
         <h1>Alibaba & the Forty Thieves</h1>
-        <a href="./form.html">Add element</a>
+        <a href="./form.html">Manage items</a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -19,9 +21,16 @@
         </div>
         <div class="drop-down"></div>
     </header>
+    
+    <select id="category-select"></select>
+
+    <button id="filter-1">Category 1</button>
+    <button id="filter-2">Category 2</button>
+    <button id="filter-3">Category 3</button>
+
     <button class="btn">Upload data</button>
     <p class="loader"></p>
-    <section class="products">
-    </section>
+    
+    <section class="products"></section>
 </body>
 </html>
