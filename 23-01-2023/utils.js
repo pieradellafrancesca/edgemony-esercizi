@@ -7,8 +7,6 @@ const cardGenerator = (data) => {
     const quoteEl = cE('p');
     const authorEl = cE('p');
 
-    
-
     cardEl.className = 'quote-card';
     idEl.className = 'id-card';
     idEl.textContent = data.id;
@@ -27,17 +25,17 @@ const randomeQuote = (data) => {
     const quoteEl = cE('p');
     const authorEl = cE('p');
 
-    let randomId = Math.floor(Math.random() * data.length) + 1;
+    let randomIndex = Math.floor(Math.random() * data.length);
 
     cardEl.className = 'quote-card';
     idEl.className = 'id-card';
-    idEl.textContent = data[randomId].id;
-    quoteEl.textContent = data[randomId].quote;
-    authorEl.textContent = data[randomId].author;
+    idEl.textContent = data[randomIndex].id;
+    quoteEl.textContent = data[randomIndex].quote;
+    authorEl.textContent = data[randomIndex].author;
 
     cardEl.append(idEl, quoteEl, authorEl);
     
-    return cardEl
+    // return cardEl
 }
 
 
