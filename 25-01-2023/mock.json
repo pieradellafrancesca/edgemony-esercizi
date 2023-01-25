@@ -1,0 +1,104 @@
+{
+    "products" : [
+        {
+            "id" : 1,
+            "title" : "iPhone 33",
+            "description" : "An apple mobile which is nothing like apple.",
+            "price" : 564,
+            "images" : [
+                "https://picsum.photos/300/300?1",
+                "https://picsum.photos/300/300?2"
+            ]
+        },
+        {
+            "id" : 2,
+            "title" : "Toxic Waste Toilet Paper",
+            "description" : "There is normal poo, there is extra stinky poo, and then there is toxic waste.",
+            "price" : 123,
+            "images" : [
+                "https://picsum.photos/300/300?3",
+                "https://picsum.photos/300/300?4"
+            ]
+        },
+        {
+            "id" : 3,
+            "title" : "Rubber Chicken Finger Puppet",
+            "description" : "A fun Rubber chicken finger puppet, latex, 6.5 inches long. ",
+            "price" : 456,
+            "images" : [
+                "https://picsum.photos/300/300?5",
+                "https://picsum.photos/300/300?6"
+            ]
+        },
+        {
+            "id" : 4,
+            "title" : "Singing Christmas Tree",
+            "description" : "A fun little decoration to show some Christmas spirit!",
+            "price" : 22,
+            "images" : [
+                "https://picsum.photos/300/300?7",
+                "https://picsum.photos/300/300?8"
+            ]
+        },
+        {
+            "id" : 5,
+            "title" : "Garden Gnome",
+            "description" : "Ordinary garden gnomes are great, and these weird gnomes are even better!",
+            "price" : 56,
+            "images" : [
+                "https://picsum.photos/300/300?9",
+                "https://picsum.photos/300/300?10"
+            ]
+        },
+        {
+            "id" : 6,
+            "title" : "Big Magnet",
+            "description" : "2.25 inches quality round magnet.",
+            "price" : 6412,
+            "images" : [
+                "https://picsum.photos/300/300?11",
+                "https://picsum.photos/300/300?12"
+            ]
+        },
+        {
+            "id" : 7,
+            "title" : "Coffee Mug",
+            "description" : "Are we addicted to coffee? Maybe a little bit.",
+            "price" : 0.99,
+            "images" : [
+                "https://picsum.photos/300/300?13",
+                "https://picsum.photos/300/300?14"
+            ]
+        },
+        {
+            "id" : 8,
+            "title" : "Onion Candy Tin",
+            "description" : "That wonderful onion flavor in a convenient bite-sized hard candy!",
+            "price" : 419.99,
+            "images" : [
+                "https://picsum.photos/300/300?15",
+                "https://picsum.photos/300/300?16"
+            ]
+        },
+        {
+            "id" : 9,
+            "title" : "GUM- Instantly Talk With your Cat",
+            "description" : "8 pieces of fruit-flavored gum let's you share intimate dreams and fears with your cat!",
+            "price" : 48.99,
+            "images" : [
+                "https://picsum.photos/300/300?17",
+                "https://picsum.photos/300/300?18"
+            ]
+        },
+        {
+            "id" : 10,
+            "title" : "The Screaming Goat",
+            "description" : "Do you have enough screaming goats in your life?  Since the answer is obviously no, this little gadget will solve all your problems!",
+            "price" : 999,
+            "images" : [
+                "https://picsum.photos/300/300?19",
+                "https://picsum.photos/300/300?20"
+            ]
+        }
+    ]   
+}
