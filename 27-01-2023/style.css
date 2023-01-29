@@ -17,23 +17,55 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 header a {
     color: aliceblue;
+    text-decoration: none;
 }
 
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-flex;
+    padding: 0 40px;
+}
+
+.nav-links li a {
+    transition: all 0.35s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: aqua;
+}
+
+header button {
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    padding: 8px 25px;
+    font-size: 15px;
+    color: aliceblue;  
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+header button:active {
+    transform: scale(0.9);
+}
 
 .tv {
     margin: 6px;
-    
 }
 
 .tv h2 {
     color: aliceblue;
-    margin-top: 60PX;
+    margin-top: 60px;
+    letter-spacing: 1px;
 }
 
 .tv img {
@@ -52,7 +84,7 @@ header a {
 }
 
 .popular, .top-rated {
-    margin: 30px;
+    margin: 40px;
     padding: 10px;
     display: flex;
     overflow-x: auto;
@@ -121,21 +153,78 @@ header a {
 {
 	background-color: #FFF;
     border-radius: 12px;
-	background-image: -webkit-linear-gradient(90deg,
-	                                          rgba(0, 0, 0, 1) 0%,
-											  rgba(0, 0, 0, 1) 25%,
-											  transparent 100%,
-											  rgba(0, 0, 0, 1) 75%,
-											  transparent)
+	background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, transparent 100%, rgba(0, 0, 0, 1) 75%, transparent)
+}
+
+footer {
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    display: flex;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div h3 {
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    color: aliceblue;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons i {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
 }
 
 
 
 .input-search {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px 10px;
+    width: 300px;
+    height: 45px;
     border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
 }
 
 .your-search {

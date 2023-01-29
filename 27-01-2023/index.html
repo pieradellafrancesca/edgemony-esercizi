@@ -7,18 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/7e7abb17d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Payperview</h1>
-        <a href="./form.html">Search</a>
+        <h1>Kamčatka Prime</h1>
+        <nav>
+            <ul class="nav-links">   
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>      
+        </nav>
+        <a href="./form.html"><button>SEARCH</button></a>
     </header>
+
     <main class="tv">
         <h2>POPULAR</h2>
         <section class="popular"></section>
         <h2>TOP RATED</h2>
         <section class="top-rated"></section>
     </main>
-    <footer></footer>
+    <div class="modal">
+        <div class="overlay"></div>
+    </div>
+
+    <footer>
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address">
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>123, XYZ Road, KGB 8<br>Kamčatka, RU</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            
+        </div>
+    </footer>
+
 </body>
 </html>
