@@ -14,6 +14,18 @@ body {
     color: aliceblue;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: aliceblue;
+}
+
+
 .tv {
     margin: 6px;
     
@@ -47,6 +59,49 @@ body {
     
 }
 
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 255, 0.35);
+    z-index: -1;
+}
+
+.tv-modal {
+    display: flex;
+    width: 800px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+}
+
+.tv-modal img {
+    width: 360px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
 
 ::-webkit-scrollbar-track
 {
@@ -76,14 +131,34 @@ body {
 
 
 
-.btn-search, form input {
+.input-search {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px 10px;
     border-radius: 8px;
 }
 
-.your-tv {
-    border: 1px solid white;
-    height: 500px;
+.your-search {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 10px;
+}
+
+.info-card {
+    display: flex;
+    margin: 10px;
+}
+
+.your-search .info-card img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.info-card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+    font-size: 0.9rem;
 }

@@ -3,7 +3,7 @@ import { cE } from './utils.js';
 
 const bodyEl = document.body;
 const inputEl = cE('input');
-inputEl.setAttribute("placeholder", "Search by name (case-sensitive)")
+inputEl.setAttribute("placeholder", "Search by name")
 
 bodyEl.appendChild(inputEl);
 
@@ -47,12 +47,12 @@ inputEl.addEventListener('input', (event) => {
     inputValue = event.target.value;
     GET('users?limit=20').then(({users}) => {
         users.map((user) => {
-            if (user.firstName.includes(inputValue)) bodyEl.appendChild(userGen(user));
+            if (user.firstName.toLowerCase().includes(inputValue)) bodyEl.appendChild(userGen(user));
         })
     });
     GET('users?limit=20').then(({users}) => {
         users.map((user) => {
-            if (user.lastName.includes(inputValue)) bodyEl.appendChild(userGen(user));
+            if (user.lastName.toLowerCase().includes(inputValue)) bodyEl.appendChild(userGen(user));
         })
     });
 });

@@ -1,5 +1,5 @@
-import { GET } from "./api.js";
-import { qS, qSA, cardGen } from "./utils.js";
+import { GET, GET2 } from "./api.js";
+import { qS, qSA, cardGen, modalGen, searchGen } from "./utils.js";
 
 
 const popularEl = qS('.popular');
@@ -7,8 +7,8 @@ const topRatedEl = qS('.top-rated');
 
 
 Promise.all([
-    GET('popular'),
-    GET('top_rated')
+    GET('tv', 'popular'),
+    GET('tv', 'top_rated')
 ])
 .then((data) => {
     data[0].results.map((tv) => popularEl.appendChild(cardGen(tv)));
@@ -16,22 +16,42 @@ Promise.all([
 })
 // .then(() => {
 //     const tvEls = qSA('.tv');
-//     tvEls.forEach((tv) => tv.addEventListener('click', () => GET(tv.id).then((x) => console.log(x))));
+
+//     tvEls.forEach((tv) => 
+//     tv.addEventListener('click', () => 
+//     GET('tv', tv.id).then((selectedTv) => {
+//         modalEl.appendChild(modalGen(selectedTv));
+//         modalEl.style.display = 'flex';
+//     }))
+//     );
 // })
+
+
+// overlayEl.addEventListener('click', () => {
+//     const modalTvEl = qS('.tv-modal');
+    
+//     modalEl.style.display = 'none';
+//     modalTvEl.remove();
+// });
 
 
 //Avanzato
-// const yourTvEl = qS('.your-tv');
-// const btnSearch = qS('.btn-search');
+const yourTvEl = qS('.your-search');
+const inputEl = qS('.input-search');
 
-// let inputValue = '';
+const cardDelete = () => {
+    const cardEls = qSA('.info-card');
+    cardEls.forEach((tv) => tv.remove());
+}
 
-// btnSearch.addEventListener('click', (e) => {
-//     inputValue.event.target.value;
-//     GET(tv.id).then((data) => {
-//         data[0].results.map((tv) => {
-//             if (tv.title.includes(inputValue)) yourTvEl.appendChild(cardGen(tv))
-//         })
-        
-//     }) 
-// })
+let inputValue = '';
+
+inputEl.addEventListener('input', (e) => {
+    cardDelete();
+    inputValue = e.target.value; 
+    GET2('tv', inputValue).then((data) => {
+        data.results.map((tv) => {
+            if (tv.name.toLowerCase().includes(inputValue)) yourTvEl.appendChild(searchGen(tv));
+        })
+    });
+})
