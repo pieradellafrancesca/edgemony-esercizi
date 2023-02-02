@@ -1,0 +1,90 @@
+[
+    {
+        "author": "Fyodor Dostoevsky",
+        "country": "Russia",
+        "imageLink": "images/the-brothers-karamazov.jpg",
+        "language": "Russian",
+        "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
+        "pages": 824,
+        "title": "The Brothers Karamazov",
+        "year": 1880,
+        "price": 22
+      },
+      {
+        "author": "Ernest Hemingway",
+        "country": "United States",
+        "imageLink": "images/the-old-man-and-the-sea.jpg",
+        "language": "English",
+        "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
+        "pages": 128,
+        "title": "The Old Man and the Sea",
+        "year": 1952,
+        "price": 10
+      },
+      {
+        "author": "Homer",
+        "country": "Greece",
+        "imageLink": "images/the-iliad-of-homer.jpg",
+        "language": "Greek",
+        "link": "https://en.wikipedia.org/wiki/Iliad\n",
+        "pages": 608,
+        "title": "Iliad",
+        "year": -735,
+        "price": 21
+      },
+      {
+        "author": "Gustave Flaubert",
+        "country": "France",
+        "imageLink": "images/madame-bovary.jpg",
+        "language": "French",
+        "link": "https://en.wikipedia.org/wiki/Madame_Bovary\n",
+        "pages": 528,
+        "title": "Madame Bovary",
+        "year": 1857,
+        "price": 12
+      },
+      {
+        "author": "Giovanni Boccaccio",
+        "country": "Italy",
+        "imageLink": "images/the-decameron.jpg",
+        "language": "Italian",
+        "link": "https://en.wikipedia.org/wiki/The_Decameron\n",
+        "pages": 1024,
+        "title": "The Decameron",
+        "year": 1351,
+        "price": 18
+      },
+      {
+        "author": "Jorge Luis Borges",
+        "country": "Argentina",
+        "imageLink": "images/ficciones.jpg",
+        "language": "Spanish",
+        "link": "https://en.wikipedia.org/wiki/Ficciones\n",
+        "pages": 224,
+        "title": "Ficciones",
+        "year": 1965,
+        "price": 12
+      },
+      {
+        "author": "Emily Bronte",
+        "country": "United Kingdom",
+        "imageLink": "images/wuthering-heights.jpg",
+        "language": "English",
+        "link": "https://en.wikipedia.org/wiki/Wuthering_Heights\n",
+        "pages": 342,
+        "title": "Wuthering Heights",
+        "year": 1847,
+        "price": 10
+      },
+      {
+        "author": "Albert Camus",
+        "country": "Algeria, French Empire",
+        "imageLink": "images/l-etranger.jpg",
+        "language": "French",
+        "link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)\n",
+        "pages": 185,
+        "title": "The Stranger",
+        "year": 1942,
+        "price": 8
+      }
+    ]
