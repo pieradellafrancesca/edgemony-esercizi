@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./background.jpg');
+    background-size: contain;
+}
+
+h1 {
+    color:cornflowerblue;
+    text-shadow: 0 6px 12px rgb(130, 250, 255);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: tomato;
+    text-shadow: 4px 10px 10px coral;
+}
+
+a:active {
+    transform: scale(0.95);
+}
+
+a:visited {
+    color: tomato;
+}
