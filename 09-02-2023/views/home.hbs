@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>{{titolo}}</title>
+  </head>
+  <body>
+    {{> header }}
+    <a href="/about">About</a>
+    <a href="/mi-presento">Mi presento</a>
+    <a href="/login">Login</a>
+    <h1>Questa è l'HOME PAGE</h1>
+    <p>In <b>{{myPreferences.season}}</b> i miei capelli sono <b>{{myPreferences.color}}.</b></p>
+    <p>Il mio animale domestico è un <b>{{myPreferences.pet}}</b> di nome <b>{{nome}}.</b></p>
+
+    {{> footer }}
+  </body>
+</html>
