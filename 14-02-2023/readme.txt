@@ -1,15 +1,12 @@
-<!-- CREAZIONE DEL DATABASE: -->
-
+CREAZIONE DEL DATABASE:
 use esercizio
 'switched to db esercizio'
 
-<!-- CREAZIONE DELLA COLLEZIONE 'COMMENTS': -->
-
+CREAZIONE DELLA COLLEZIONE 'COMMENTS':
 db.createCollection('comments')
 { ok: 1 }
 
-<!-- INSERIMENTO DI UN RECORD: -->
-
+INSERIMENTO DI UN RECORD:
 db.comments.insertOne(
 {id: 1,
 body: 'This is some awesome thinking!',
@@ -24,16 +21,14 @@ acknowledged: true,
 insertedId: ObjectId("63eba99d7a96a2ae8c949739")
 }
 
-<!-- CANCELLAZIONE DI UN RECORD: -->
-
+CANCELLAZIONE DI UN RECORD:
 db.comments.deleteOne({id: 1})
 {
 acknowledged: true,
 deletedCount: 1
 }
 
-<!-- INSERIMENTO DI UN RECORD: -->
-
+INSERIMENTO DI UN RECORD:
 db.comments.insertOne(
 {id: 1,
 body: "This is some awesome thinking!",
@@ -49,8 +44,7 @@ acknowledged: true,
 insertedId: ObjectId("63ebaa427a96a2ae8c94973a")
 }
 
-<!-- INSERIMENTO DI PIù RECORD: -->
-
+INSERIMENTO DI PIù RECORD:
 db.comments.insertMany([
 {
 id: 2,
@@ -95,8 +89,7 @@ insertedIds: {
 }
 }
 
-<!-- CREAZIONE DELLA COLLEZIONE 'PRODUCTS' -->
-
+CREAZIONE DELLA COLLEZIONE 'PRODUCTS'
 db.createCollection('products')
 { ok: 1 }
 db.products.insertMany([
@@ -167,8 +160,7 @@ insertedIds: {
 }
 }
 
-<!-- RESTITUZIONE DI TUTTI I DATI DELLA COLLECTION 'PRODUCTS': -->
-
+RESTITUZIONE DI TUTTI I DATI DELLA COLLECTION 'PRODUCTS':
 db.products.find()
 {
 \_id: ObjectId("63ebaeb47a96a2ae8c94973f"),
@@ -231,8 +223,7 @@ brand: 'Apple',
 category: 'laptops'
 }
 
-<!-- RESTITUZIONE DEL PRIMO RECORD CHE SODDISFA IL CRITERIO SPECIFICATO: -->
-
+RESTITUZIONE DEL PRIMO RECORD CHE SODDISFA IL CRITERIO SPECIFICATO:
 db.products.findOne({brand: 'Apple'})
 {
 \_id: ObjectId("63ebaeb47a96a2ae8c94973f"),
@@ -245,8 +236,7 @@ brand: 'Apple',
 category: 'smartphones'
 }
 
-<!-- RESTITUZIONE DI TUTTI I RECORD CHE SODDISFANO IL CRITERIO SPECIFICATO: -->
-
+RESTITUZIONE DI TUTTI I RECORD CHE SODDISFANO IL CRITERIO SPECIFICATO:
 db.products.find({brand: 'Apple'})
 {
 \_id: ObjectId("63ebaeb47a96a2ae8c94973f"),
@@ -279,15 +269,12 @@ brand: 'Apple',
 category: 'laptops'
 }
 
-<!-- MODIFICA DI UN RECORD: -->
-
+MODIFICA DI UN RECORD:
 db.products.updateOne({id: 6},
 {
-
-<!-- $set: {
+$set: {
 price: 9999,
-} -->
-
+}
 }
 )
 {
@@ -298,8 +285,7 @@ modifiedCount: 1,
 upsertedCount: 0
 }
 
-<!-- ORDINAMENTO PER RATING DECRESCENTE: -->
-
+ORDINAMENTO PER RATING DECRESCENTE:
 db.products.find().sort({rating: -1})
 {
 \_id: ObjectId("63ebaeb47a96a2ae8c94973f"),
@@ -362,18 +348,15 @@ brand: 'Huawei',
 category: 'smartphones'
 }
 
-<!-- CONTEGGIO DI TUTTI I RECORD: -->
-
+CONTEGGIO DI TUTTI I RECORD:
 db.products.countDocuments()
 6
 
-<!-- CONTEGGIO DI TUTTI I RECORD CHE SODDISFANO IL CRITERIO SPECIFICATO: -->
-
+CONTEGGIO DI TUTTI I RECORD CHE SODDISFANO IL CRITERIO SPECIFICATO:
 db.products.find({brand: 'Apple'}).itcount()
 3
 
-<!-- LIMITAZIONE DEL NUMERO DI RECORD: -->
-
+LIMITAZIONE DEL NUMERO DI RECORD:
 db.products.find().limit(3)
 {
 \_id: ObjectId("63ebaeb47a96a2ae8c94973f"),
@@ -406,8 +389,7 @@ brand: 'Samsung',
 category: 'smartphones'
 }
 
-<!-- RICERCA DI UN DATO E RESTITUZIONE DI UN CAMPO: -->
-
+RICERCA DI UN DATO E RESTITUZIONE DI UN CAMPO:
 db.products.find({id: 5}, {description: 1})
 {
 \_id: ObjectId("63ebaeb47a96a2ae8c949743"),
