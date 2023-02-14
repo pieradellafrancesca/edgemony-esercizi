@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "63ebaa427a96a2ae8c94973a"
+  },
+  "id": 1,
+  "body": "This is some awesome thinking!",
+  "user": {
+    "id": 63,
+    "username": "eburras1q"
+  }
+},{
+  "_id": {
+    "$oid": "63ebabcf7a96a2ae8c94973b"
+  },
+  "id": 2,
+  "body": "What terrific math skills you’re showing!",
+  "user": {
+    "id": 71,
+    "username": "omarsland1y"
+  }
+},{
+  "_id": {
+    "$oid": "63ebabcf7a96a2ae8c94973c"
+  },
+  "id": 3,
+  "body": "You are an amazing writer!",
+  "user": {
+    "id": 29,
+    "username": "jissetts"
+  }
+},{
+  "_id": {
+    "$oid": "63ebabcf7a96a2ae8c94973d"
+  },
+  "id": 4,
+  "body": "Wow! You have improved so much!",
+  "user": {
+    "id": 19,
+    "username": "bleveragei"
+  }
+},{
+  "_id": {
+    "$oid": "63ebabcf7a96a2ae8c94973e"
+  },
+  "id": 5,
+  "body": "Nice idea!",
+  "user": {
+    "id": 70,
+    "username": "cmasurel1x"
+  }
+}]
