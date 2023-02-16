@@ -1,6 +1,6 @@
 const MongoClient = require("mongodb").MongoClient;
 let url =
-  "mongodb+srv://francesca:carlinO45@cluster0.lkwmvsj.mongodb.net/school?retryWrites=true";
+  "mongodb+srv://<username>:<password>@cluster0.lkwmvsj.mongodb.net/school?retryWrites=true";
 
 // Connessione al db
 MongoClient.connect(url)
