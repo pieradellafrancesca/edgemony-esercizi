@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 
 mongoose.connect(
-  "mongodb+srv://francesca:bass0tt08@cluster0.lkwmvsj.mongodb.net/note?retryWrites=true&w=majority",
+  "mongodb+srv://<username>:<password>@cluster0.lkwmvsj.mongodb.net/note?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

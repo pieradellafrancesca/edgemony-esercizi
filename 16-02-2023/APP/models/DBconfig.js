@@ -11,7 +11,7 @@ mongoose.connect(
     if (!err) {
       console.log("MongoDB connesso.");
     } else {
-      console.log(`Problemi con la connessione:  ${err}`);
+      console.log(`Problemi con la connessione: ${err}`);
     }
   }
 );
