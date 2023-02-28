@@ -3,10 +3,9 @@ import "./index.css";
 const CardQuote = ({ quoteData }) => {
   return (
     <div className="CardQuote">
-      <div className="text-content">
-        <p>{quoteData.quote}</p>
-        <p>{quoteData.author}</p>
-      </div>
+      <p>{quoteData.quote}</p>
+      <hr />
+      <p>{quoteData.author}</p>
     </div>
   );
 };

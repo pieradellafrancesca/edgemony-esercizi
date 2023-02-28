@@ -2,8 +2,6 @@
   color: white;
   width: 100%;
   background: linear-gradient(to right, #00093c, #2d0b00);
-  position: absolute;
-  bottom: 0;
   padding: 100px 0 30px;
   border-top-left-radius: 125px;
   font-size: 13px;
@@ -55,6 +53,11 @@
   font-weight: bold;
   color: white;
   text-decoration: none;
+  transition: all 0.35s ease 0s;
+}
+
+.col ul li a:hover {
+  color: coral;
 }
 
 .col form {

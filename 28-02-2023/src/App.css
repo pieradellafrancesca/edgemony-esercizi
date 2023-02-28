@@ -1,3 +1,5 @@
 .App {
   font-family: "Candara";
+  display: flex;
+  flex-direction: column;
 }

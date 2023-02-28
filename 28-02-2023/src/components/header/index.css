@@ -1,5 +1,6 @@
 .Header {
   margin: 0;
+  width: 100%;
 }
 
 nav {
@@ -27,5 +28,5 @@ nav li a {
 }
 
 nav li a:hover {
-  color: dodgerblue;
+  color: coral;
 }

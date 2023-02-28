@@ -1,5 +1,14 @@
 .CardQuote {
-  width: 300px;
-  border: 1px solid gray;
-  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+hr {
+  width: 55%;
 }
