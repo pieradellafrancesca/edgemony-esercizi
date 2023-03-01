@@ -1,0 +1,17 @@
+.Gallery {
+  margin: 30px 100px;
+}
+.Gallery h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.img-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.img-container img {
+  border-radius: 12px;
+}

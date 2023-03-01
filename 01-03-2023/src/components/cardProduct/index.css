@@ -1,0 +1,33 @@
+.CardProduct {
+  width: 280px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.CardProduct img {
+  width: 280px;
+  height: 150px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  filter: saturate(1.2) contrast(1.1);
+}
+
+.CardProduct__text-content {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.discount {
+  border-radius: 8px;
+}
+.discount p {
+  padding: 4px;
+  text-align: center;
+}

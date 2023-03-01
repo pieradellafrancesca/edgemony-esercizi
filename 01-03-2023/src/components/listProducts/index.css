@@ -1,0 +1,13 @@
+.ListProducts {
+  margin: 60px 100px;
+}
+
+.ListProducts h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
