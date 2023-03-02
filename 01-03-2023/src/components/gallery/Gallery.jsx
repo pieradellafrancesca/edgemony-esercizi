@@ -13,8 +13,8 @@ const Gallery = ({ title }) => {
     <div className="Gallery">
       <h3>{title}</h3>
       <div className="img-container">
-        {images.map((image) => (
-          <img src={image} alt={`Img ${[image]}`} key={image} />
+        {images.map((image, index) => (
+          <img src={image} alt={`Img ${index}`} key={image} />
         ))}
       </div>
     </div>
