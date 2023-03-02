@@ -6,7 +6,7 @@ const ListQuotes = () => {
   return (
     <div className="ListQuotes">
       {quotesList.map((quote) => (
-        <CardQuote quoteData={quote} />
+        <CardQuote quoteData={quote} key={quote.id} />
       ))}
     </div>
   );
