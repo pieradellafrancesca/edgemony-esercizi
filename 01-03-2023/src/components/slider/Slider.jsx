@@ -14,14 +14,30 @@ const Slider = () => {
       <img src={images[indexImg]} alt="images" />
       <button
         className="slider-btn-1"
-        onClick={() => (indexImg > 0 ? setIndexImg((prev) => prev - 1) : null)}
+        // onClick={() => (indexImg > 0 ? setIndexImg((prev) => prev - 1) : null)}
+        onClick={() => {
+          if (indexImg > 0) {
+            setIndexImg((prev) => prev - 1);
+          } else if (indexImg === 0) {
+            setIndexImg(images.length);
+            setIndexImg((prev) => prev - 1);
+          }
+        }}
       >
         ◀
       </button>
       <button
         className="slider-btn-2"
         onClick={() =>
-          indexImg < images.length - 1 ? setIndexImg((prev) => prev + 1) : null
+          // indexImg < images.length - 1 ? setIndexImg((prev) => prev + 1) : null
+          {
+            if (indexImg < images.length - 1) {
+              setIndexImg((prev) => prev + 1);
+            } else if (indexImg === images.length - 1) {
+              setIndexImg(-1);
+              setIndexImg((prev) => prev + 1);
+            }
+          }
         }
       >
         ▶

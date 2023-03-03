@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { productsList } from "./mocks/productsList.js";
-import Control from "./components/control";
+// import { productsList } from "./mocks/productsList.js";
+// import Control from "./components/control";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Slider from "./components/slider";
@@ -13,6 +13,7 @@ import "./App.css";
 function App() {
   const [isDarkMode, setDarkMode] = useState(true);
   const [isModalOpen, setModalOpen] = useState(null);
+
   return (
     <div className={`App ${isDarkMode && "dark-mode"}`}>
       <Header />
@@ -21,16 +22,12 @@ function App() {
         className="toggle-mode"
         onClick={() => setDarkMode((prev) => !prev)}
       >
-        {isDarkMode ? "🌙" : "💡"}
+        {isDarkMode ? "💡" : "🌙"}
       </button>
       <Slider />
       {/* <Gallery title="Gallery" /> */}
-      <Control listDataLength={productsList.length} />
-      <ListProducts
-        title="List products"
-        listData={productsList}
-        setModalOpen={setModalOpen}
-      />
+      {/* <Control listDataLength={productsList.length} /> */}
+      <ListProducts title="List products" setModalOpen={setModalOpen} />
       {isModalOpen ? (
         <ModalProduct product={isModalOpen} setModalOpen={setModalOpen} />
       ) : null}
