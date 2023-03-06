@@ -1,0 +1,37 @@
+.Paginate {
+  display: flex;
+  gap: 10px;
+}
+
+.page-number {
+  /* height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  background: linear-gradient(to right, #00093c, #2d0b00); */
+  font-size: 16px;
+  font-weight: 600;
+  color: #00a8ff;
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.page-number:hover {
+  color: #fff;
+  background: #00a8ff;
+}
+
+.active {
+  color: #fff;
+  background: #00a8ff;
+}
+
+.active:hover {
+  color: #00a8ff;
+  background: #fff;
+}
