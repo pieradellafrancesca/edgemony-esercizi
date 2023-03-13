@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   border-radius: 4px;
   width: 30px;
   height: 30px;
@@ -10,5 +10,6 @@
 }
 
 .active {
-  background-color: lightcoral;
+  background-color: teal;
+  color: white;
 }
