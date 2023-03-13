@@ -1,0 +1,10 @@
+.Month {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  width: 360px;
+  padding: 30px;
+  gap: 12px;
+}
