@@ -1,0 +1,49 @@
+.TodoList {
+  /* border: 2px solid blue; */
+  padding: 20px;
+}
+.TodoList form {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.todo-input,
+.completed-input,
+.userId-input {
+  border-radius: 20px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 4px 10px;
+}
+
+.todo-submit {
+  border: none;
+  border-radius: 20px;
+  padding: 4px 10px;
+  width: 60px;
+  color: white;
+  background-color: rgb(152, 41, 0);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.todo-submit:active {
+  transform: scale(0.9);
+}
+
+.TodoList__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 911px) {
+  .TodoList form {
+    flex-direction: column;
+    align-items: center;
+  }
+}

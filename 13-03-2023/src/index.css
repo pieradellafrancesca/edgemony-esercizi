@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: Bahnschrift Light;
+}
+
+body {
+  background-color: rgba(0, 136, 255, 0.25);
+  margin: 20px 40px;
+}
