@@ -1,4 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 .App h1 {
   font-size: 3rem;
   color: rgb(152, 41, 0);
+}
+
+@media screen and (max-width: 911px) {
+  .App {
+    align-items: center;
+  }
 }

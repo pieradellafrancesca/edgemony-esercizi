@@ -2,15 +2,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  width: 360px;
-  background-image: linear-gradient(
-    174.2deg,
-    rgba(255, 244, 228, 1) 7.1%,
-    rgba(240, 246, 238, 1) 67.4%
+  padding: 20px 40px;
+  width: 60%;
+  background-image: radial-gradient(
+    circle 621px at 25.3% 13.8%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(234, 236, 255, 1) 90%
   );
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.TodoItem:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.firstLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
 }
 
 .TodoItem__content {
@@ -20,6 +32,7 @@
 .TodoItem__completed {
   display: flex;
   align-items: flex-end;
+  font-size: 0.9rem;
 }
 
 .done {
@@ -42,6 +55,34 @@
   color: orange;
 }
 
+.secondLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .TodoItem__userId {
   font-size: 0.9rem;
+}
+
+.trash-can {
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+  color: rgb(152, 41, 0);
+  cursor: pointer;
+}
+
+.trash-can:hover {
+  opacity: 1;
+}
+
+.trash-can:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 911px) {
+  .TodoItem {
+    width: 100%;
+  }
 }

@@ -2,34 +2,60 @@ import todos from "../../mocks/todos";
 import TodoItem from "../todoItem";
 import { useState } from "react";
 import "./index.css";
+import SearchBar from "../searchBar";
 
 const TodoList = () => {
   const [list, setList] = useState(todos);
   const [todoValue, setTodoValue] = useState("");
-  const [isCompleted, setIsCompleted] = useState(false);
   const [userIdValue, setUserIdValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+  const [option, setOption] = useState("");
 
   const handleTodoChange = (event) => {
     setTodoValue(event.target.value);
   };
-  const handleCompletedChange = () => {
-    setIsCompleted((prev) => !prev);
-  };
 
   const handleUserIdChange = (event) => {
     setUserIdValue(event.target.value);
-    console.log(event.target.value);
   };
 
   const handleAdd = (event) => {
     event.preventDefault();
+    // const newList = list.concat({
+    //   id: list.length + 1,
+    //   todo: todoValue,
+    //   completed: false,
+    //   userId: userIdValue,
+    // });
+    // setList(newList);
+
     const newList = list.concat({
+      id: list.length + 1,
       todo: todoValue,
-      completed: isCompleted,
+      completed: false,
       userId: userIdValue,
     });
-    setList(newList);
+    setList((prev) => {
+      if (
+        !prev.find(
+          (todo) => todo.todo.toLowerCase() === todoValue.toLowerCase()
+        )
+      ) {
+        return newList;
+      } else {
+        alert("Already existing!");
+        return prev;
+      }
+    });
   };
+
+  const filteredTodos = list.filter((todo) =>
+    todo.todo.toLowerCase().includes(searchValue)
+  );
+
+  // const abc = filteredTodos.filter((todo) => {
+  //   todo.completed === option;
+  // });
 
   return (
     <div className="TodoList">
@@ -43,17 +69,6 @@ const TodoList = () => {
           onChange={handleTodoChange}
           required
         />
-        <label>
-          Completed
-          <input
-            type="checkbox"
-            className="completed-input"
-            placeholder="Completed..."
-            checked={isCompleted}
-            onChange={handleCompletedChange}
-          />
-        </label>
-
         <input
           type="text"
           className="userId-input"
@@ -64,10 +79,13 @@ const TodoList = () => {
         />
         <input type="submit" className="todo-submit" value="Add" />
       </form>
+      <SearchBar setSearchValue={setSearchValue} setOption={setOption} />
       <div className="TodoList__content">
-        {list.map((todo, index) => (
-          <TodoItem todoData={todo} key={index} />
-        ))}
+        {filteredTodos
+          .sort((todo1, todo2) => (todo1.todo > todo2.todo ? 1 : -1))
+          .map((todo) => (
+            <TodoItem todoData={todo} setList={setList} key={todo.id} />
+          ))}
       </div>
     </div>
   );

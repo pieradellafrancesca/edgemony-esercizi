@@ -1,0 +1,26 @@
+.SearchBar {
+  /* sborder: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.SearchBar form {
+  padding: 0;
+}
+
+.SearchBar form input {
+  border-radius: 20px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 4px 10px;
+}
+
+.SearchBar select {
+  border-radius: 20px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 4px 10px;
+}

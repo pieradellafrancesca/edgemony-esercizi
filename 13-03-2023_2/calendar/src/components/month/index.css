@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 360px;
   padding: 30px;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .Month__wrapper {
