@@ -1,0 +1,14 @@
+.Counter {
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Counter button {
+  cursor: pointer;
+}
