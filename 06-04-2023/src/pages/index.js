@@ -29,7 +29,6 @@ export default function Home({ postData }) {
             priority
             alt={"background-image"}
           /> */}
-
           <CardList postData={postData} />
         </Layout>
       </main>
